@@ -1,0 +1,123 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "Enemy 3",
+  "_objFlags": 0,
+  "_native": "",
+  "_duration": 0.6666666666666666,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "Feeler/Left": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": -10
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Feeler/Right": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 10
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "Wing 2/Left": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 30
+            },
+            {
+              "frame": 0.25,
+              "value": 25
+            },
+            {
+              "frame": 0.5,
+              "value": 30
+            }
+          ]
+        }
+      },
+      "Wing 2/Right": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": -30
+            },
+            {
+              "frame": 0.25,
+              "value": -25
+            },
+            {
+              "frame": 0.5,
+              "value": -30
+            }
+          ]
+        }
+      },
+      "Wing 1/Left": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": 25
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 15
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 25
+            }
+          ]
+        }
+      },
+      "Wing 1/Right": {
+        "props": {
+          "angle": [
+            {
+              "frame": 0,
+              "value": -25
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": -15
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": -25
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}
