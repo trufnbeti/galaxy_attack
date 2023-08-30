@@ -1179,8 +1179,8 @@
       "__id__": 17
     },
     "component": "",
-    "_componentId": "ccfcfWjhUpE352R8suu5pok",
-    "handler": "onButtonClick",
+    "_componentId": "7110aFIPDVJX5QzKki9ISNt",
+    "handler": "onBtnRestartClick",
     "customEventData": ""
   },
   {
@@ -1203,7 +1203,7 @@
     "_id": ""
   },
   {
-    "__type__": "ccfcfWjhUpE352R8suu5pok",
+    "__type__": "7110aFIPDVJX5QzKki9ISNt",
     "_name": "",
     "_objFlags": 0,
     "node": {

@@ -27,6 +27,9 @@ export default class SoundManager extends cc.Component {
    protected onLoad(): void {
        SoundManager.ins = this;
    }
+   @property(cc.AudioSource)
+   private bgMusic: cc.AudioSource;
+
    //------------------------------------
 
     @property([cc.AudioClip])
@@ -43,7 +46,19 @@ export default class SoundManager extends cc.Component {
         }
     }
 
+    public loadMusic(): void{
+        this.bgMusic.play();
+    }
+
     public PlayClip(type: AudioType): void {
         this.audies[type].play();
+    }
+    public changeVolumeBgMusic(value: number): void{
+        this.bgMusic.volume = value;
+    }
+    public changeVolumeSound(value: number): void{
+        this.audies.forEach((item) => {
+            item.volume = value;
+        });
     }
 }

@@ -57,8 +57,8 @@ export default class Ship extends Character {
 	onLoad() {
 		// this.player = cc.find('player');
 		//set up move object
-		this.node.on(cc.Node.EventType.TOUCH_START, this.onTouchBegan, this);
-		this.node.on(cc.Node.EventType.TOUCH_MOVE, this.onTouchMoved, this);
+		// this.node.on(cc.Node.EventType.TOUCH_START, this.onTouchBegan, this);
+		// this.node.on(cc.Node.EventType.TOUCH_MOVE, this.onTouchMoved, this);
 
 		this.screen = new cc.Vec2(
 			cc.view.getVisibleSize().width,
@@ -176,6 +176,8 @@ export default class Ship extends Character {
 				//bật fx
 				this.ripple.active = true;
 				UIManager.Ins.onOpen(0);
+				this.node.on(cc.Node.EventType.TOUCH_START, this.onTouchBegan, this);
+				this.node.on(cc.Node.EventType.TOUCH_MOVE, this.onTouchMoved, this);
 			},
 			false
 		);

@@ -14,6 +14,13 @@ import UIManager from "./UIManager";
 
 const {ccclass, property} = cc._decorator;
 
+
+export enum GameState {
+   MAIN = 0,
+   GAMEPLAY = 1,
+   PAUSE = 2,
+}
+
 @ccclass
 export default class LevelManager extends cc.Component {
 

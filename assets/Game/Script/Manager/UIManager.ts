@@ -9,7 +9,8 @@ const {ccclass, property} = cc._decorator;
  
 @ccclass
 export default class UIManager extends cc.Component {
-
+    @property(cc.Button)
+    private btnPause: cc.Button;
     // singleton
     private static ins : UIManager;
     public static get Ins() : UIManager
@@ -49,12 +50,15 @@ export default class UIManager extends cc.Component {
         }
 
         this.canvas[index].active = true;
+        if (index != 0)
+            this.disableBtnPause();
     }
 
     //close theo index
     public onClose(index: number){
         if(this.canvas[index] != null){
             this.canvas[index].active = false;
+            this.enableBtnPause();
         }
     }
 
@@ -68,6 +72,11 @@ export default class UIManager extends cc.Component {
     }
     protected update(dt: number): void {
         // console.log(this.canvas);
-        
+    }
+    disableBtnPause(): void{
+        this.btnPause.interactable = false;
+    }
+    enableBtnPause(): void{
+        this.btnPause.interactable = true;
     }
 }

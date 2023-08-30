@@ -9,10 +9,9 @@ const {ccclass, property} = cc._decorator;
 @ccclass
 export default class Boss extends Enemy{
     @property(cc.Node)
-    private healthBar: cc.Node;
-    @property(cc.Node)
     private sprite: cc.Node;
     private maxHp: number;
+    @property(cc.ProgressBar)
     private progressBar: cc.ProgressBar;
 
     public onHit(damage: number): void {
@@ -32,7 +31,6 @@ export default class Boss extends Enemy{
         super.onInit(hp);
         this.maxHp = hp;
         this.timeShootDelay = 2;
-        this.progressBar = this.healthBar.getComponent(cc.ProgressBar);
     }
 
     protected shoot(): void {
